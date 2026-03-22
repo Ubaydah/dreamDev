@@ -1,33 +1,30 @@
 package methods;
+import java.util.Scanner;
 
 public class backToSender {
-    public static int calculateRiderPayment( int collectionRate) {
+    public static void main(String[] args) {
+        Scanner inputCollector = new Scanner(System.in);
+
+        System.out.println("Enter the delivery collection rate");
+        int collectionRate = inputCollector.nextInt();
+
         int basePay = 5000;
         int amountPerParcel = 0;
 
-        int successfulDelivery;
-
         if (collectionRate < 50) {
             amountPerParcel = 160;
-            successfulDelivery = collectionRate * amountPerParcel + basePay;
         }
         else if (collectionRate < 60) {
             amountPerParcel = 200;
-            successfulDelivery = collectionRate * amountPerParcel + basePay;
         }
         else if (collectionRate < 70) {
             amountPerParcel = 250;
-            successfulDelivery = collectionRate * amountPerParcel + basePay;
         }
         else {
             amountPerParcel = 500;
-            successfulDelivery = collectionRate * amountPerParcel + basePay;
         }
-        return successfulDelivery;
-    }
+        int riderWage = collectionRate * amountPerParcel + basePay;
 
-    public static void main(String[] args) {
-        System.out.println(calculateRiderPayment(80));
-        System.out.println(calculateRiderPayment(25));
+        System.out.printf("The rider's wage is %d",riderWage);
     }
 }
