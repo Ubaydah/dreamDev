@@ -1,6 +1,6 @@
 package methods;
 
-public class backToSender {
+public class BackToSender {
     public static int calculateRiderPayment( int collectionRate) {
         int basePay = 5000;
         int amountPerParcel = 0;

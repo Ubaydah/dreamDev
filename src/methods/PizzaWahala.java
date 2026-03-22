@@ -1,6 +1,6 @@
 package methods;
 import java.util.Scanner;
-public class pizzaWahala {
+public class PizzaWahala {
     public static void main(String[] args) {
         Scanner inputCollector = new Scanner(System.in);
         int noOfSlices = 0;
