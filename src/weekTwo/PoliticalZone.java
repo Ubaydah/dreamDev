@@ -1,11 +1,11 @@
 package weekTwo;
 import java.util.Arrays;
-import java.util.Scanner;
+//import java.util.Scanner;
 public enum PoliticalZone {
     NORTH_CENTRAL("Benue", "FCT", "Kogi", "Kwara", "Nasarrawa", "Niger", "Plateau"),
     NORTH_EAST("Adamawa", "Bauchi", "Borno", "Gombe", "Taraba", "Yobe"),
-    NORTH_WEST("Kaduna", "Katsina", "Kano"),
-    SOUTH_EAST("Abia", "Anambra", "Ebonyi"),
+    NORTH_WEST("Kaduna", "Katsina", "Kano", "Kebbi", "Sokoto", "Jigawa", "Zamfara"),
+    SOUTH_EAST("Abia", "Anambra", "Ebonyi", "Enugu", "Imo"),
     SOUTH_SOUTH("Akwa-ibom", "Cross-River", "Bayelsa", "Delta", "Edo", "Rivers"),
     SOUTH_WEST("Oyo", "Lagos", "Ogun", "Ondo", "Osun", "Ekiti");
 
